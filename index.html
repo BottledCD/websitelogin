@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>about:blank</title>
+</head>
+<body style="background-color: black;">
+    <button style="background-color: black; border-style: none;">L</button>
+    <script>
+      var urlObj = new window.URL(window.location.href);
+      var url = "https://bottledcd.github.io/GameWebsite/";
+      if (url) {
+        var win;
+ 
+        document.querySelector('button').onclick = function() {
+          if (win) {
+            win.focus();
+          } else {
+            win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+          }
+          document.querySelector('button').style.bacground = 'grey';
+          document.querySelector('button').innerHTML = "Play Now";
+        };
+      }
+    </script>
+</body>
+</html>
+
+<iframe id="aswift_8" name="aswift_8" style="width: 941px !important; height: 116px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="941" height="116" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20230315/r20110914/zrt_lookup.html?fsb=1#RS-1-&amp;adk=1812271802&amp;client=ca-pub-9602208238522604&amp;fa=2&amp;ifi=9&amp;uci=a!9&amp;btvi=5&amp;xpc=SNaWqHM5FC&amp;p=https%3A//online-emulators.com" data-google-container-id="a!9" data-google-query-id="CMb4wbnW4f0CFfkHTwgd0TMKYQ" data-load-complete="true"></iframe>
